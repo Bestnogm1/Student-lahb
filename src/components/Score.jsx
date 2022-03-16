@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Score(props) {
+function Score({score, date}) {
   return (
     <div>
-      <p>{props.scores.date}</p>
-      <p>{props.scores.score}</p>
+      <p> {`Date: ${date}`}</p>
+      <p> {`Scores: ${score}`}</p>
     </div>
   );
 }
